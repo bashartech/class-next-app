@@ -1,0 +1,14 @@
+.text{
+    background-color: rgb(38, 3, 3);
+    color: rgb(216, 204, 125);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 10px 2px rgb(146, 187, 188);
+}
