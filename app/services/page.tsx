@@ -1,4 +1,3 @@
-import cssStyle from "./services.module.css"
 import Header from "../component/Header/Header"
 import Hero from "../component/Hero/Hero"
 import Footer from "../component/Footer/footer"
@@ -9,8 +8,7 @@ function ServicePage() {
     <div>
 <Header />
 <Hero btn = "Services" heading = "Demanding Services" />
-    <div className={cssStyle.text}>    <Footer />
-    </div>
+        <Footer />
     </div>
 
   )
