@@ -1,14 +1,7 @@
 import Link from "next/link"
-import { MouseEvent } from 'react';
 export default function Hero(props :any) {
 console.log(props, "props")
-    const MyComponent = () => {
-      const handleClick = (event: MouseEvent<HTMLAnchorElement>) => {
-        event.preventDefault(); // Prevent default navigation behavior
-        const targetId = event.currentTarget.getAttribute('href')?.substring(1);
-        console.log(targetId); // Logs the id without the '#'
-      };
-    }    
+      
   return (
     <div>
       <section className="hero-section">

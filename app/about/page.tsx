@@ -1,7 +1,6 @@
 import Footer from "../component/Footer/footer"
 import Header from "../component/Header/Header"
 import Hero from "../component/Hero/Hero"
-import cssStyle from "./about.module.css" 
 
 
 export default function About() {

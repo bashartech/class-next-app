@@ -1,7 +1,7 @@
 import Link from "next/link"
 import cssStyle from "./header.module.css"
 
-export default function Header(props: any) {
+export default function Header() {
   return (
     <div className={cssStyle.navbar}>
       <nav>
