@@ -1,5 +1,4 @@
 import cssStyle from "./services.module.css"
-import Link from "next/link"
 import Header from "../component/Header/Header"
 import Hero from "../component/Hero/Hero"
 import Footer from "../component/Footer/footer"
