@@ -10,9 +10,7 @@ function ServicePage() {
     <div>
 <Header />
 <Hero btn = "Services" heading = "Demanding Services" />
-    <div className={cssStyle.text}>
-<Link href={"/services/web-development"}>Web Development</Link>
-    <Footer />
+    <div className={cssStyle.text}>    <Footer />
     </div>
     </div>
 
