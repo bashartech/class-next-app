@@ -3,10 +3,10 @@ import Link from "next/link";
 // Define an interface for the props to specify the expected types
 interface HeroProps {
   heading: string;
-  btn: string;
+  
 }
 
-export default function Hero({ heading, btn }: HeroProps) {
+export default function Hero({ heading }: HeroProps) {
   return (
     <div>
       <section className="hero-section">
@@ -17,7 +17,7 @@ export default function Hero({ heading, btn }: HeroProps) {
             Expert IT services for startups and enterprises, driving digital transformation and growth
           </p>
           <Link href="/services">
-            <button className="cta-button">{btn}</button>
+            <button className="cta-button">Contact</button>
           </Link>
         </div>
       </section>
