@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <Header  />
 
-     <Hero btn = "Services" heading = "Transforming Businesses through Innovative IT Solutions" ></Hero>
+     <Hero  heading = "Transforming Businesses through Innovative IT Solutions" ></Hero>
     <Footer/>
     </div>
      );
