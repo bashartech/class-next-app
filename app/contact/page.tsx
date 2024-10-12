@@ -6,7 +6,7 @@ export default function contact() {
   return (
     <div>
 <Header />
-    <Hero btn = "Services" heading = "Contact Us" />
+    <Hero heading = "Contact Us" />
     <Footer />
     </div>
   )
