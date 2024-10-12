@@ -6,7 +6,7 @@ function WebDevelopmentPage() {
   return (
     <div>
       <Header />
-      <Hero btn = "Services" heading = "Web Development" />
+      <Hero heading = "Web Development" />
     <Footer />
     </div>
   )
