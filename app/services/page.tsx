@@ -7,7 +7,7 @@ function ServicePage() {
   return (
     <div>
 <Header />
-<Hero btn = "Services" heading = "Demanding Services" />
+<Hero heading = "Demanding Services" />
         <Footer />
     </div>
 
