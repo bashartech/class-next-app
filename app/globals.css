@@ -280,6 +280,10 @@ body {
     display: flex;
     margin-top: 15px;
 }
+#newsletter-form input {
+    color : black;
+
+}
 
 .newsletter input[type="email"] {
     flex: 1;
