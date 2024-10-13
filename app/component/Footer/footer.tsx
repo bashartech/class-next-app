@@ -97,15 +97,6 @@ export default function Footer() {
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
-            {/* <div className="footer-section social-media">
-                <h3>Follow Us</h3>
-                <div className="social-icons">
-                    <a href="#" className="social-icon"><i className="fab fa-twitter">Twitter</i></a>
-                    <a href="#" className="social-icon"><i className="fab fa-linkedin">Linkdin</i></a>
-                    <a href="#" className="social-icon"><i className="fab fa-facebook">Github</i></a>
-                    <a href="#" className="social-icon"><i className="fab fa-instagram"></i></a>
-                </div>
-            </div> */}
         </div>
         <div className="footer-bottom">
             <p>&copy; 2024 Bashar Tech. All rights reserved.</p>
