@@ -13,12 +13,12 @@ export default function Header() {
 
   return (
     <div className={cssStyle.navbar}>
-      <div className="header">
-        <div className="logo">
+      <div className={cssStyle.header}>
+        <div className={cssStyle.logo}>
           Bashar Tech
         </div>
-        <nav className={`navbar ${isMenuOpen ? "active" : ""}`}>
-          <ul className="nav-links">
+        <nav className={`${cssStyle.nav} ${isMenuOpen ? cssStyle.active : ""}`}>
+          <ul className={cssStyle.navLinks}>
             <Link href={"/"}>
               <li id="home">Home</li>
             </Link>
@@ -38,7 +38,7 @@ export default function Header() {
         </nav>
         {/* Menu Toggle Button */}
         <div
-          className={`menu-toggle ${isMenuOpen ? "active" : ""}`}
+          className={`${cssStyle.menuToggle} ${isMenuOpen ? "active" : ""}`}
           onClick={handleToggle}
         >
           <div className="bar">☰</div>
@@ -47,3 +47,4 @@ export default function Header() {
     </div>
   );
 }
+
