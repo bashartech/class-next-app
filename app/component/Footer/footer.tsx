@@ -1,6 +1,7 @@
 "use client"
 import { useEffect } from 'react';
 import Link from "next/link"
+import cssStyle from "./footer.module.css"
 
 export default function Footer() {
     useEffect(() => {
@@ -65,15 +66,15 @@ export default function Footer() {
     
   return (
     <div>
-      <footer className="footer">
-        <div className="footer-container">
-            <div className="footer-section contact-info">
+      <footer className={cssStyle.footer}>
+        <div className={cssStyle.footerContainer}>
+            <div className={`${cssStyle.footerSection} contact-info`}>
                 <h3>Contact Us</h3>
                 <p><i className="fas fa-map-marker-alt"></i> Teacher Society 21 A Karachi</p>
                 <p><i className="fas fa-phone"></i> 03042985456</p>
                 <p><i className="fas fa-envelope"></i> <a href="bashar-portfolio-pk,netlify.app">bashartc13@gmail.com</a></p>
             </div>
-            <div className="footer-section quick-links">
+            <div className={`${cssStyle.footerSection} ${cssStyle.quickLinks} `}>
                 <h3>Quick Links</h3>
                 <ul>
                    <Link href={"/"}> 
@@ -89,20 +90,21 @@ export default function Footer() {
                    </Link>
                 </ul>
             </div>
-            <div className="footer-section newsletter">
+            <div className={`${cssStyle.footerSection} ${cssStyle.newsletter} `}>
                 <h3>Stay Updated</h3>
                 <p>Subscribe to our newsletter for latest news and updates</p>
-                <form id="newsletter-form">
+                <form id={cssStyle.newsletterForm}>
                     <input type="email" placeholder="Enter your email" required/>
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
         </div>
-        <div className="footer-bottom">
+        <div className={cssStyle.footerBottom}>
             <p>&copy; 2024 Bashar Tech. All rights reserved.</p>
-           <Link href={"/contact"}><button className="cta-button">Get in Touch</button></Link> 
+           <Link href={"/contact"}><button className={cssStyle.ctaButton}>Get in Touch</button></Link> 
         </div>
     </footer>
     </div>
   )
 }
+
