@@ -1,1 +1,110 @@
+.heroSection {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
 
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://source.unsplash.com/random/1920x1080?technology');
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.container {
+    text-align: center;
+    z-index: 1;
+    padding: 20px;
+}
+
+.headline {
+    font-size: 48px;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideIn 0.5s ease-out 0.5s forwards;
+}
+
+.subheading {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideIn 0.5s ease-out 0.7s forwards;
+}
+
+.ctaButton {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f1c40f;
+    color: #2c3e50;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.ctaButton:hover {
+    background-color: #f39c12;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .headline {
+        font-size: 36px;
+    }
+
+    .subheading {
+        font-size: 18px;
+    }
+
+    .ctaButton {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+}
